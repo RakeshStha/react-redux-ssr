@@ -30,10 +30,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:dev": "env-cmd -f .env.development react-scripts build",
+    "build:dev": "env-cmd -f .env.development babel src --out-dir dist --copy-files && react-scripts build",
     "start:prod": "env-cmd -f .env react-scripts start",
     "dev:server": "nodemon --exec babel-node server.js",
-    "server": "node server.js"
+    "server": "npx babel-node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +54,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.22.1",
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "@babel/register": "^7.21.0"
   }
