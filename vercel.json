@@ -7,8 +7,8 @@
     ],
     "public": {
         "include": [
-            "static/js/main.dfda5405.js",
-            "static/css/main.51d177ba.css"
+            "/main.dfda5405.js",
+            "/main.51d177ba.css"
         ]
     },
     "routes": [
