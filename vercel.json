@@ -5,6 +5,12 @@
             "destination": "/public/$1"
         }
     ],
+    "public": {
+        "include": [
+            "static/js/main.dfda5405.js",
+            "static.css/main.51d177ba.css"
+        ]
+    },
     "routes": [
         {
             "src": "/(.*)",
