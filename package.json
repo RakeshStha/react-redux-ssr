@@ -32,7 +32,8 @@
     "eject": "react-scripts eject",
     "build:dev": "env-cmd -f .env.development react-scripts build",
     "start:prod": "env-cmd -f .env react-scripts start",
-    "server": "nodemon --exec babel-node server.js"
+    "dev:server": "nodemon --exec babel-node server.js",
+    "server": "node server.js"
   },
   "eslintConfig": {
     "extends": [
