@@ -1,7 +1,9 @@
 {
-    "public": [
-        "js/*.js",
-        "css/*.css"
+    "rewrites": [
+        {
+            "source": "/static/(.*)",
+            "destination": "/public/$1"
+        }
     ],
     "routes": [
         {
