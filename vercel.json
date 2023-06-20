@@ -1,4 +1,8 @@
 {
+    "public": [
+        "js/*.js",
+        "css/*.css"
+    ],
     "routes": [
         {
             "src": "/(.*)",
